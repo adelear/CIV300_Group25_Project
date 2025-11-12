@@ -1,0 +1,248 @@
+img {
+    width: 100%;
+    height: auto; /* or 100vh for full screen height idk */
+    background-size: cover;       /* Scales image to fill width */
+    background-position: center;  /* Keeps image centered */
+    background-repeat: no-repeat;
+}
+
+.home-container {
+    width: 100%;
+}
+
+/* styling for image and text on banner */
+.banner-container {
+  position: relative;
+  width: 100%;
+}
+
+.banner-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Gradient overlay on the left side */
+.banner-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%; /* adjust how much gradient covers */
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent);
+  z-index: 1;
+}
+
+/* Text styling */
+.banner-text {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: white;
+  z-index: 2;
+  max-width: 500px;
+}
+
+.banner-text h1 {
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  line-height: 1.2;
+}
+
+.banner-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* media responsive for phones (kinda...) */
+@media (max-width: 768px) {
+  img {
+    margin-top: 15%;
+  }
+  .banner-text h1 {
+    font-size: 20px;
+  }
+  .banner-text p {
+    font-size: 13px;
+  }
+}
+
+/* middle content */
+
+.two-box-container {
+  display: flex;
+  gap: 0; /* space between boxes */
+  flex-wrap: wrap; /* allows stacking on small screens */
+  padding-bottom: 7%;
+}
+
+.box {
+  flex: 1 1 calc(50% - 20px); /* two boxes per row */
+  min-width: 300px; /* prevent too small boxes */
+  background-color: white; /* change later  after fixing box*/
+  margin-top: 5%;
+  padding: 10px;
+  box-sizing: border-box;
+  
+}
+
+.mid-image {
+  max-width: 90%;   /* scales down on smaller screens */
+  height: auto;      /* maintains aspect ratio */
+  border-radius: 15%;
+  display: block;    /* removes inline spacing issues */
+  padding-left: 5%;
+}
+
+.mid-title{
+  font-size: 60px;
+  font-weight: bold;
+  padding-top: 10%;
+  padding-left: 15%;
+  padding-right: 2%;
+  margin-bottom: 10%;
+}
+
+.mid-text{
+  padding-left: 15%;
+  padding-right: 5%; /*adjust depending on inserted text lol */
+}
+
+button {
+  margin-left: 15%;
+  margin-top: 5%;
+  background-color: rgb(148, 184, 241);
+  border: none;
+  color: white !important;
+  padding: 30px 70px;
+  text-align: center;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(12, 60, 148);
+}
+
+/* mobile styles */
+@media (max-width: 768px) {
+  .mid-image {
+    padding-left: 0;
+    margin: 0 auto; /* centers the image */
+  }
+
+  .mid-title{
+    padding-top: 0%;
+    padding-left: 1%;
+    text-align: left;
+    font-size: 30px;
+    line-height: 1;
+  }
+
+
+  .mid-text{
+    padding-top: 0%;
+    padding-left: 1%;
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  button{
+    margin-left: 1%;
+    padding: 15px 35px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 876px) {
+  .mid-title{
+    line-height: 0.8;
+    font-size: 60px;
+  }
+
+
+  .mid-text{
+    /* padding-top: 0%;
+    padding-left: 1%;
+    text-align: left;
+    font-size: 12px; */
+    line-height: 1.2;
+    font-size: 15px;
+  }
+}
+
+/* counter */
+.counter-container {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: repeat-x;
+  background-image: url("https://i.pinimg.com/736x/ca/52/e8/ca52e8d6d363a495219e23cc522a6179.jpg") !important;
+}
+
+.counter-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.counter-number {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 10%;
+  color: rgb(255, 255, 255);
+}
+
+.counter-text {
+  font-size: 1rem;
+  margin-top: 0%;
+  color: white;
+}
+.icon-counter{
+  font-size: 48px; 
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .counter-container {
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 0px;
+  }
+
+  .counter-item {
+    margin-bottom: 0;
+  }
+
+  .counter-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0%;
+  color: rgb(255, 255, 255);
+}
+
+.counter-text {
+  font-size: 1rem;
+  margin-top: 0%;
+  color: white;
+  padding: 4px;
+  margin: 0;
+}
+
+.icon-counter{
+  font-size: 30px; 
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
+}
+
+

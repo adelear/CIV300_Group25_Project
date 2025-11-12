@@ -1,0 +1,22 @@
+{
+  "blogs": [
+    {
+      "title": "Exploring Angular Material",
+      "author": "Camila Esguerra",
+      "date": "2025-11-10",
+      "summary": "Learn how to use Angular Material components effectively."
+    },
+    {
+      "title": "Understanding RxJS",
+      "author": "John Doe",
+      "date": "2025-11-08",
+      "summary": "RxJS is powerful for reactive programming in Angular."
+    },
+    {
+      "title": "Rae is pretty",
+      "author": "Meee",
+      "date": "today...",
+      "summary": "i love my gf"
+    }
+  ]
+}

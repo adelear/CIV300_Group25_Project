@@ -1,0 +1,57 @@
+/* footer styles */
+.footer-container {
+  background-color: #2d4a72;
+  color: #fff;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px; /* keeps them closer */
+    margin: 0 auto; /* centers the block */
+    padding-bottom: 20px;
+  }
+
+  /* Removed invalid selector block. If you intended to style a specific element, add the correct selector here. */
+
+  .footer-section {
+    h3 {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 8px;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 14px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+    font-size: 14px;
+
+    .heart {
+      color: #fff;
+      vertical-align: middle;
+    }
+  }
+}

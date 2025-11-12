@@ -1,0 +1,48 @@
+<!-- home main container -->
+<div class="home-container">
+    <!-- banner section -->
+    <div class="banner-container">
+        <img src="banner-ph.jpg" alt="Banner">
+        <div class="banner-text" [@textAnimation]="animationState">
+            <h1>Support a cause you care about</h1>
+            <p>Lorem ipsum whatever text</p>
+        </div>
+    </div>
+    <!-- middle content -->
+    <div class="two-box-container">
+        <div class="box"> <!-- image box -->
+            <img src="mid-content.png" alt="sample-image" class="mid-image">
+        </div>
+        <div class="box"> <!-- text and button box -->
+            <h1 class="mid-title">Who we are?</h1>
+            <p class="mid-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button mat-button>Learn More</button>
+        </div>
+    </div>
+    <!-- counter -->
+    <div #counterElement class="counter-container">
+        <div class="counter-item">
+            <p class="counter-number">
+                <mat-icon class="icon-counter">volunteer_activism</mat-icon>
+                {{ displayNumberOne }}+
+            </p>
+            <p class="counter-text">Active Cases</p>
+        </div>
+        <div class="counter-item">
+            <p class="counter-number">
+                <mat-icon class="icon-counter">archive</mat-icon>
+                {{ displayNumberTwo }}
+            </p>
+            <p class="counter-text">People Joined</p>
+        </div>
+        <div class="counter-item">
+            <p class="counter-number">
+                <mat-icon class="icon-counter">diversity_1</mat-icon>
+                {{ displayNumberThree }}
+            </p>
+            <p class="counter-text">Cases every Year</p>
+        </div>
+    </div>
+</div>

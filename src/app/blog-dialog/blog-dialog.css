@@ -1,0 +1,24 @@
+h1 {
+    margin-left: 5%;
+}
+
+mat-dialog-content {
+    flex-direction: column;
+    text-align: left;
+}
+
+.mapTitle {
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+button {
+  background-color: rgb(148, 184, 241);
+  border: none;
+  color: white !important;
+  padding: 10px 30px;
+  margin: 2%;
+  text-align: center;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}

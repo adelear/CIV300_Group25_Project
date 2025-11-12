@@ -1,0 +1,31 @@
+<div class="home-container">
+    <div class="banner-container">
+        <img src="banner-ph.jpg" alt="Banner">
+        <div class="banner-text">
+            <h1>Active Cases</h1>
+        </div>
+    </div>
+
+    <!-- title  -->
+    <h1 class="title-blog">Causes we are serving</h1>
+
+    <!-- mat cards for blog -->
+    <div class="cards-container">
+        <!-- <p *ngIf="filteredAuthor.length === 0">No blogs found.</p> -->
+        @for (s of filteredAuthor; track $index) {
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>{{s.title}}</mat-card-title>
+                <mat-card-subtitle>{{s.author}} - {{s.date}}</mat-card-subtitle>
+            </mat-card-header>
+            <img class="image-card" src="https://material.angular.dev/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <p>Blog post summary goes here...</p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button (click)="openDialog(s)">More</button>
+            </mat-card-actions>
+        </mat-card>
+    }
+    </div>
+</div>

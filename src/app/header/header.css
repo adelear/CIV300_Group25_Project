@@ -1,0 +1,21 @@
+mat-toolbar {
+  background-color: white;
+  color: black;
+  font-family: 'Trebuchet MS', sans-serif;
+  width: 100%;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+mat-button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  padding-right: 40px;
+  transition: color 0.3s ease;
+}
+mat-button:hover {
+  color: rgb(148, 184, 241);
+}
