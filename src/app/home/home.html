@@ -4,20 +4,43 @@
     <div class="banner-container">
         <img src="background.jpg" alt="Banner">
         <div class="banner-text" [@textAnimation]="animationState">
-            <h1>Insert your own title</h1>
-            <p>Lorem ipsum whatever text</p>
+            <h1>FloodSafe Philippines</h1>
+            <p>A student-led CIV300 group dedicated to spreading awareness and addressing the impacts of flooding in the Philippines</p>
         </div>
     </div>
     <!-- middle content -->
     <div class="two-box-container">
         <div class="box"> <!-- image box -->
-            <img src="mid-content.png" alt="sample-image" class="mid-image">
+            <a href= "https://www.bbc.com/news/articles/c3rjyxv9472o"> 
+                <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/6901/live/39dda470-beaa-11f0-9d0e-d55ceea13692.jpg.webp" alt="sample-image" class="mid-image">
+            </a> 
         </div>
         <div class="box"> <!-- text and button box -->
-            <h1 class="mid-title">Insert text</h1>
-            <p class="mid-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h1 class="mid-title">Our Objectives</h1>
+            <p class="mid-text"> Many areas in the Philippines with tropical river catchments frequently 
+                experience flash floods, intense rainfalls, and typhoons [Journal Article]. Just recently, 
+                Typhoon Fung-Wong devastated the Philippines as the second typhoon in one week, 
+                causing flooding that killed at least six individuals, as well as over 1.4 million 
+                people to evacuate, showing how vulnerable the country’s infrastructure is to 
+                natural disasters [Recent Flooding]. Our mission is to raise awareness of the flooding in 
+                Philippines by observing how inefficient infrastructure and the lack of professional 
+                responsibility heavily impact environmental and social sustainability. 
+            </p>
+            <!-- change routerLink to a different page if needed -->
+            <button mat-button routerLink="about">Learn More</button>
+        </div>
+
+         <div class="boxNoImg"> <!-- text and button box -->
+            <h1 class="mid-title">The Consequences of Inaction</h1>
+            <p class="mid-text"> Many areas in the Philippines with tropical river catchments frequently 
+                experience flash floods, intense rainfalls, and typhoons [Journal Article]. Just recently, 
+                Typhoon Fung-Wong devastated the Philippines as the second typhoon in one week, 
+                causing flooding that killed at least six individuals, as well as over 1.4 million 
+                people to evacuate, showing how vulnerable the country’s infrastructure is to 
+                natural disasters [Recent Flooding]. Our mission is to raise awareness of the flooding in 
+                Philippines by observing how inefficient infrastructure and the lack of professional 
+                responsibility heavily impact environmental and social sustainability.
+            </p>
             <!-- change routerLink to a different page if needed -->
             <button mat-button routerLink="about">Learn More</button>
         </div>

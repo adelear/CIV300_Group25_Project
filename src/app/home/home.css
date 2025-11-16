@@ -89,6 +89,16 @@ img {
   
 }
 
+.boxNoImg {
+  flex: 1 1 100%;   
+  min-width: 100%;  
+  background-color: white;
+  margin-top: 0%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
 .mid-image {
   max-width: 90%;   /* scales down on smaller screens */
   height: auto;      /* maintains aspect ratio */
@@ -100,10 +110,10 @@ img {
 .mid-title{
   font-size: 60px;
   font-weight: bold;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-left: 15%;
   padding-right: 2%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .mid-text{
@@ -137,6 +147,7 @@ button:hover {
   .mid-title{
     padding-top: 0%;
     padding-left: 1%;
+    margin-bottom: 4px;
     text-align: left;
     font-size: 30px;
     line-height: 1;
@@ -150,6 +161,7 @@ button:hover {
     font-size: 12px;
     line-height: 1.2;
   }
+
 
   button{
     margin-left: 1%;
