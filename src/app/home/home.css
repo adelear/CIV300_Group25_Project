@@ -111,13 +111,17 @@ img {
   font-size: 60px;
   font-weight: bold;
   padding-top: 5%;
-  padding-left: 15%;
+  padding-left: 1%;
+
+  /* space between image and text title */
   padding-right: 2%;
   margin-bottom: 5%;
 }
 
 .mid-text{
-  padding-left: 15%;
+  
+  /* space between image and text */
+  padding-left: 1%;
   padding-right: 5%; /*adjust depending on inserted text lol */
 }
 

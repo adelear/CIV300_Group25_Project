@@ -19,3 +19,14 @@ mat-button {
 mat-button:hover {
   color: rgb(148, 184, 241);
 }
+
+.logo {
+  height: 85px;
+  width: auto;
+}
+
+.logo-text {
+  display: inline-flex;
+  align-items: center;  
+  gap: 8px;           
+}
