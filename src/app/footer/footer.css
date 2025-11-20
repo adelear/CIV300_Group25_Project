@@ -14,6 +14,18 @@
     padding-bottom: 20px;
   }
 
+.logo-text {
+  display: inline-flex;
+  align-items: center;  
+  gap: 8px;           
+  font-size: 20px;
+}
+
+.logo {
+  height: 200px;
+  width: auto;
+}
+
   /* Removed invalid selector block. If you intended to style a specific element, add the correct selector here. */
 
   .footer-section {

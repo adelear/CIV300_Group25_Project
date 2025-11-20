@@ -110,6 +110,7 @@ button {
 
 /* extra blog content styling  */
 .blog-container {
+  border-bottom: 2px solid #ccc;
   display: flex;
   flex-direction: row; /* Side by side */
   gap: 10px;
