@@ -103,7 +103,17 @@ mat-card {
 
 }
 
-.example-header-image {
-  background-image: url('https://material.angular.dev/assets/img/examples/shiba1.jpg');
+.example-header-image1 {
+  background-image: url("/Rae.png");
+  background-size: cover;
+}
+
+.example-header-image2 {
+  background-image: url("/Roman.png");
+  background-size: cover;
+}
+
+.example-header-image3 {
+  background-image: url("/Danish.png");
   background-size: cover;
 }
