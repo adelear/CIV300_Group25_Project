@@ -137,3 +137,13 @@ button {
     flex-direction: column; /* Stack vertically */
   }
 }
+
+.mid-title{
+  font-size: 60px;
+  font-weight: bold;
+  padding-top: 5%;
+  padding-left: 1%;
+
+  /* space between image and text title */
+  padding-right: 2%;
+}
